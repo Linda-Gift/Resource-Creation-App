@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Manager Task</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <div class="first-container">
+            <div class="welcome-container">
+                <h3>Welcome</h3>
+            </div>
+
+            <div class="button-container">
+                <button id="resource-button">Create A Resource</button>
+            </div>
+        </div>
+
+        <div class="second-container">
+            <div class="data-container" id="data-container">
+                <div class="title-and-delete-icon">
+                    <div class="title-of-resource" id="postTitle"><h4></h4></div>
+                    <div class="delete-icon" id="delete-icon"><i class="fa-solid fa-trash-can"></i></div>
+                </div>
+                <div class="link-0f-website-container" id="postLink"><p></p></div>
+                <div class="description-of-website" id="postDescription"><p></p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <form id="myform">
+
+            <div class="close-icon-container" id="close-icon-container">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+    
+    
+            <div class="create-container">
+                <h1>Create Resource</h1>
+            </div>
+
+            <div class="input-group1">
+                <div class="website">
+                    <label for="website" id="website">Name Of Website</label>
+                </div>
+
+                <div class="website-input">
+                    <input type="text" placeholder="eg Data Analysis Website For NASA" name="website" id="input-website">
+                </div>
+            </div>
+
+            <div class="input-group1">
+                <div class="link-container">
+                    <label for="link" id="link">Link of Website</label>
+                </div>
+
+                <div class="link-input">
+                    <input type="text" placeholder="eg www.link.com" name="link" id="input-link">
+                </div>
+            </div>
+
+           <div class="description-group">
+            <div class="description">
+                <label for="text" id="description" ></label>
+            </div>
+            <div class="textarea-description">
+                <textarea name="text" id="input-description" placeholder="It is..."></textarea>
+            </div>
+           </div>
+
+           <div class="description-button-container" id="button">
+            <button>Create</button>
+           </div>
+
+        </form>
+    </div>
+    
+
+    <script src="./index1.js"></script>
+</body>
+</html>
